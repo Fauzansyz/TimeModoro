@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, TimerActivity::class.java))
+            startActivity(Intent(this@MainActivity, TimerActivity::class.java))
             finish() // biar gak bisa balik ke splash
         }, 2000)
         
