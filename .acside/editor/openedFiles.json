@@ -1,0 +1,110 @@
+{
+  "allFiles": [
+    {
+      "file": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/kotlin/com/zandeveloper/timemodoro/data/TimeModel.kt",
+      "selection": {
+        "end": {
+          "column": 4,
+          "index": 64,
+          "line": 3
+        },
+        "start": {
+          "column": 4,
+          "index": 64,
+          "line": 3
+        }
+      }
+    },
+    {
+      "file": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/kotlin/com/zandeveloper/timemodoro/ui/timer/TimerContract.kt",
+      "selection": {
+        "end": {
+          "column": 22,
+          "index": 313,
+          "line": 14
+        },
+        "start": {
+          "column": 22,
+          "index": 313,
+          "line": 14
+        }
+      }
+    },
+    {
+      "file": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/kotlin/com/zandeveloper/timemodoro/ui/timer/TimerPresenter.kt",
+      "selection": {
+        "end": {
+          "column": 57,
+          "index": 102,
+          "line": 1
+        },
+        "start": {
+          "column": 57,
+          "index": 102,
+          "line": 1
+        }
+      }
+    },
+    {
+      "file": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/kotlin/com/zandeveloper/timemodoro/ui/timer/TimerActivity.kt",
+      "selection": {
+        "end": {
+          "column": 1,
+          "index": 1035,
+          "line": 38
+        },
+        "start": {
+          "column": 1,
+          "index": 1035,
+          "line": 38
+        }
+      }
+    },
+    {
+      "file": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/AndroidManifest.xml",
+      "selection": {
+        "end": {
+          "column": 36,
+          "index": 591,
+          "line": 13
+        },
+        "start": {
+          "column": 36,
+          "index": 591,
+          "line": 13
+        }
+      }
+    },
+    {
+      "file": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/res/layout/activity_timer.xml",
+      "selection": {
+        "end": {
+          "column": 45,
+          "index": 1068,
+          "line": 27
+        },
+        "start": {
+          "column": 45,
+          "index": 1068,
+          "line": 27
+        }
+      }
+    },
+    {
+      "file": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/res/layout/activity_main.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    }
+  ],
+  "selectedFile": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/res/layout/activity_main.xml"
+}

@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/gradle.properties",
+      "selection": {
+        "end": {
+          "column": 30,
+          "index": 263,
+          "line": 7
+        },
+        "start": {
+          "column": 30,
+          "index": 263,
+          "line": 7
+        }
+      }
+    }
+  ],
+  "selectedFile": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/gradle.properties"
+}
