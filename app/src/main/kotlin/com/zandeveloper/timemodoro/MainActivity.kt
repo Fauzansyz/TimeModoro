@@ -3,6 +3,7 @@ package com.zandeveloper.timemodoro
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.zandeveloper.timemodoro.databinding.ActivityMainBinding
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
     
@@ -14,8 +15,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(Intent(this, TimerActivity::class.java))
+            finish() // biar gak bisa balik ke splash
+        }, 2000)
         
-        binding.textView.text = "Hello, Basic Activity!"
     }
     
     override fun onDestroy() {

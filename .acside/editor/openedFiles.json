@@ -139,17 +139,17 @@
       "file": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/kotlin/com/zandeveloper/timemodoro/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 48,
-          "index": 373,
-          "line": 10
+          "column": 42,
+          "index": 532,
+          "line": 14
         },
         "start": {
-          "column": 48,
-          "index": 373,
-          "line": 10
+          "column": 42,
+          "index": 532,
+          "line": 14
         }
       }
     }
   ],
-  "selectedFile": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/kotlin/com/zandeveloper/timemodoro/ui/timer/TimerActivity.kt"
+  "selectedFile": "/data/user/0/com.tom.rv2ide/files/home/ACSProjects/TimeModoro/app/src/main/kotlin/com/zandeveloper/timemodoro/MainActivity.kt"
 }
