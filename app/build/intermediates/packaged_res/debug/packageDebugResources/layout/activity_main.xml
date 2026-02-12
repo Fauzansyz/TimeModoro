@@ -22,12 +22,16 @@
     <TextView
         android:text="TimeModoro"
         android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textStyle="bold"
         android:layout_marginTop="16dp"/>
 
     <TextView
-        android:text="Stay focused, king 👑"
+        android:text="Stay focused ⏰"
         android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"/>
 
 </LinearLayout>

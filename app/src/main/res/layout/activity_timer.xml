@@ -23,21 +23,21 @@
 <com.google.android.material.button.MaterialButton
     android:id="@+id/btnStart"
     android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    android:layout_height="wrap_content"
     app:background="?attr/colorPrimary"
     android:text="Start"/>
 
 <com.google.android.material.button.MaterialButton
     android:id="@+id/btnPause"
     android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    android:layout_height="wrap_content"
     app:background="?attr/colorPrimary"
     android:text="Pause"/>
 
 <com.google.android.material.button.MaterialButton
     android:id="@+id/btnReset"
     android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    android:layout_height="wrap_content"
     app:background="?attr/colorPrimary"
     android:text="Reset"/>
 
