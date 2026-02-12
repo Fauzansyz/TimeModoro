@@ -4,6 +4,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.zandeveloper.timemodoro.databinding.ActivityMainBinding
 import android.content.Intent
+import android.os.Handler
+import android.os.Looper
+import com.zandeveloper.timemodoro.ui.timer.TimerActivity
 
 class MainActivity : AppCompatActivity() {
     
