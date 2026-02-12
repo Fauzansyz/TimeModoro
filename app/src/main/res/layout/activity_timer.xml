@@ -20,17 +20,17 @@
 
 <com.google.android.material.button.MaterialButton
     android:id="@+id/btnStart"
-    app:background="@color/colorPrimary"
+    app:background="?attr/colorPrimary"
     android:text="Start"/>
 
 <com.google.android.material.button.MaterialButton
     android:id="@+id/btnPause"
-    app:background="@color/colorPrimary"
+    app:background="?attr/colorPrimary"
     android:text="Pause"/>
 
 <com.google.android.material.button.MaterialButton
     android:id="@+id/btnReset"
-    app:background="@color/colorPrimary"
+    app:background="?attr/colorPrimary"
     android:text="Reset"/>
 
     </androidx.core.widget.NestedScrollView>

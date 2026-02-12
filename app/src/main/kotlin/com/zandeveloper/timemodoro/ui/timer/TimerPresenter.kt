@@ -1,5 +1,6 @@
 package com.zandeveloper.timemodoro.ui.timer
 import com.zandeveloper.timemodoro.ui.timer.TimerContract
+import android.os.CountDownTimer
 
 class TimerPresenter(
     private val view: TimerContract.View
