@@ -148,7 +148,6 @@ id btnReset
 id btnStart
 id coordinator
 id nested_scroll_view
-id textView
 id tvTimer
 layout activity_main
 layout activity_timer
