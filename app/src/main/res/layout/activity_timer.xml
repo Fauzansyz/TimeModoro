@@ -2,6 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:background="?attr/colorOnPrimaryContainer"
     android:layout_height="match_parent">
 
     <!-- Timer TextView di tengah layar -->
@@ -10,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="25:00"
-        android:textSize="48sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Start"
-            app:backgroundTint="?attr/colorPrimary"/>
+            app:backgroundTint="?attr/colorPrimaryFixedDim"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnPause"
@@ -42,7 +43,7 @@
             android:layout_height="wrap_content"
             android:text="Pause"
             android:layout_marginStart="8dp"
-            app:backgroundTint="?attr/colorPrimary"/>
+            app:backgroundTint="?attr/colorPrimaryFixedDim"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnReset"
@@ -50,7 +51,7 @@
             android:layout_height="wrap_content"
             android:text="Reset"
             android:layout_marginStart="8dp"
-            app:backgroundTint="?attr/colorPrimary"/>
+            app:backgroundTint="?attr/colorPrimaryFixedDim"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
