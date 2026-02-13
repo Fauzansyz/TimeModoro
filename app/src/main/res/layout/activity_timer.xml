@@ -11,6 +11,10 @@
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
+<LinearLayout 
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
         <!-- Your content below appbar right here -->
 <TextView
     android:id="@+id/tvTimer"
@@ -40,6 +44,8 @@
     android:layout_height="wrap_content"
     app:background="?attr/colorPrimary"
     android:text="Reset"/>
+
+</LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
 
