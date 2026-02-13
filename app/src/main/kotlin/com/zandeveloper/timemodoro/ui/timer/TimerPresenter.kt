@@ -10,6 +10,7 @@ class TimerPresenter(
     private var timer: CountDownTimer? = null
 
     override fun startTimer() {
+    view.showStartState()
         timer = object : CountDownTimer(timeLeft * 1000L, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 timeLeft = (millisUntilFinished / 1000).toInt()
@@ -24,12 +25,19 @@ class TimerPresenter(
 
     override fun pauseTimer() {
         timer?.cancel()
+        view.showPauseState()
+    }
+    
+    override fun detach(){
+    timer?.cancel()
+    view.showResetState()
     }
 
     override fun resetTimer() {
         timer?.cancel()
         timeLeft = 25 * 60
         view.updateTimer("25:00")
+        view.showResetState()
     }
 
     private fun formatTime(sec: Int): String {

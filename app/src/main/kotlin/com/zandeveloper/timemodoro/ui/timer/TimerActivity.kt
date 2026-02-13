@@ -42,6 +42,16 @@ class TimerActivity : AppCompatActivity(), TimerContract.View {
     binding.btnPause.isEnabled = false
     }
     
+    override fun showResetState(){
+    binding.btnStart.isEnabled = true
+    binding.btnPause.isEnabled = true
+    }
+    
+    override fun onDestroy(){
+      super.onDestroy()
+      presenter.detach()
+    }
+    
     override fun showStartState() {
     binding.btnStart.isEnabled = false
     binding.btnPause.isEnabled = true
