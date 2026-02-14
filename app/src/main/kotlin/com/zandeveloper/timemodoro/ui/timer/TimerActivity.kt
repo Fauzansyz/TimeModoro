@@ -3,6 +3,7 @@ package com.zandeveloper.timemodoro.ui.timer
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
+import com.zandeveloper.timemodoro.R
 import com.zandeveloper.timemodoro.databinding.ActivityTimerBinding
 
 class TimerActivity : AppCompatActivity(), TimerContract.View {
@@ -11,6 +12,14 @@ class TimerActivity : AppCompatActivity(), TimerContract.View {
     private val binding: ActivityTimerBinding
         get() = checkNotNull(_binding) { "Activity has been destroyed" }
     private lateinit var presenter: TimerContract.Presenter
+    private val backgrounds = listOf(
+       R.drawable.backgrounds_bg_afternoon_mountain,
+       R.drawable.backgrounds_bg_night_mountain,
+       R.drawable.backgrounds_bg_night_forest,
+       R.drawable.backgrounds_bg_default
+)
+
+    private var currentIndex = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +28,16 @@ class TimerActivity : AppCompatActivity(), TimerContract.View {
         setContentView(binding.root)
 
         presenter = TimerPresenter(this)
+        
+        val randomImage = backgrounds.random()
+        
+        binding.bgImage.animate()
+        .alpha(0f)
+        .setDuration(300)
+        .withEndAction {
+        binding.bgImage.setImageResource(randomImage)
+        binding.bgImage.animate().alpha(1f).setDuration(300)
+    }
 
         binding.btnStart.setOnClickListener {
             presenter.startTimer()
