@@ -4,6 +4,19 @@
     android:layout_width="match_parent"
     android:background="?attr/colorPrimaryContainer"
     android:layout_height="match_parent">
+    
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_default" />
+
+    <!-- Overlay gelap -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
 
     <!-- Timer TextView di tengah layar -->
     <TextView
