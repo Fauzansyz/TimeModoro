@@ -21,9 +21,9 @@ class TimerActivity : AppCompatActivity(), TimerContract.View {
         get() = checkNotNull(_binding) { "Activity has been destroyed" }
     private lateinit var presenter: TimerContract.Presenter
     private val backgrounds = listOf(
-       R.drawable.bg_afternoon_mountains,
-       R.drawable.bg_night_mountains,
-       R.drawable.bg_night_forest,
+       R.drawable.bg_forest,
+       R.drawable.bg_mountains,
+       R.drawable.bg_mountains_second,
        R.drawable.bg_default
 )
 
