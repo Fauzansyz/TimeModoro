@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
 import com.zandeveloper.timemodoro.R
 import com.zandeveloper.timemodoro.databinding.ActivityTimerBinding
+import android.view.Window
+import android.graphics.BitmapFactory
+import android.os.Build
+import android.graphics.drawable.GradientDrawable
 
 class TimerActivity : AppCompatActivity(), TimerContract.View {
 
@@ -30,6 +34,7 @@ class TimerActivity : AppCompatActivity(), TimerContract.View {
         presenter = TimerPresenter(this)
         
         val randomImage = backgrounds.random()
+        applyPaletteGradient(randomImage)
         
         binding.bgImage.animate()
         .alpha(0f)
@@ -78,5 +83,37 @@ class TimerActivity : AppCompatActivity(), TimerContract.View {
 
     override fun showFinishState() {
         Toast.makeText(this, "Time's up bro 🍅", Toast.LENGTH_SHORT).show()
+    }
+    
+    private fun applyPaletteGradient(resId: Int) {
+        val bitmap = BitmapFactory.decodeResource(resources, resId)
+        Palette.from(bitmap).generate { palette ->
+            palette?.let {
+                val dominant = it.getDominantColor(Color.BLACK)
+                val vibrant = it.getVibrantColor(dominant)
+
+                val gradient = GradientDrawable(
+                    GradientDrawable.Orientation.TOP_BOTTOM,
+                    intArrayOf(vibrant, dominant)
+                )
+
+                // Set overlay full screen
+                binding.overlayGradient.background = gradient
+
+                // Status bar & nav bar transparan
+                window.statusBarColor = Color.TRANSPARENT
+                window.navigationBarColor = Color.TRANSPARENT
+
+                // Icon status bar & nav bar
+                val isLight = ColorUtils.calculateLuminance(dominant) > 0.5
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    window.decorView.systemUiVisibility = if (isLight) {
+                        View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+                    } else {
+                        0
+                    }
+                }
+            }
+        }
     }
 }
