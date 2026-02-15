@@ -49,7 +49,7 @@
         
         <item name="android:statusBarColor">@color/md_theme_onPrimaryContainer</item>
     <item name="android:navigationBarColor">@color/md_theme_onPrimaryContainer</item>
-    <item name="android:windowLightStatusBar">true</item>
-    <item name="android:windowLightNavigationBar">true</item>
+    <item name="android:windowLightStatusBar">false</item>
+    <item name="android:windowLightNavigationBar">false</item>
     </style>
 </resources>
