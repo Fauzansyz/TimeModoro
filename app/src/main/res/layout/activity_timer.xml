@@ -13,17 +13,12 @@
         android:scaleType="centerCrop"
         android:src="@drawable/bg_default" />
 
-    <View
-        android:id="@+id/overlayGradient"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
-
-    <!-- Overlay gelap 
+    <!-- Overlay gelap -->
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#80000000" />  -->
+        android:background="#80000000" />  
 
     <!-- Timer TextView di tengah layar -->
     <TextView

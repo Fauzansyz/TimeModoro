@@ -102,7 +102,7 @@ class TimerActivity : AppCompatActivity(), TimerContract.View {
                 )
 
                 // Set overlay full screen
-                binding.overlayGradient.background = gradient
+               // binding.overlayGradient.background = gradient
 
                 // Status bar & nav bar transparan
                 window.statusBarColor = Color.TRANSPARENT
