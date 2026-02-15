@@ -9,6 +9,10 @@ import android.view.Window
 import android.graphics.BitmapFactory
 import android.os.Build
 import android.graphics.drawable.GradientDrawable
+import android.graphics.Color
+import androidx.core.graphics.ColorUtils
+import android.view.View
+import androidx.palette.graphics.Palette
 
 class TimerActivity : AppCompatActivity(), TimerContract.View {
 

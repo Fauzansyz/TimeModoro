@@ -36,6 +36,7 @@ android {
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
+    implementation("androidx.palette:palette:1.0.0")
     implementation(libs.material)
     implementation(libs.androidx.constraintlayout)
 }
