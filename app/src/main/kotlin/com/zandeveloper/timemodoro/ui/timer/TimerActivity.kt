@@ -38,8 +38,6 @@ class TimerActivity : AppCompatActivity(), TimerContract.View {
 
         presenter = TimerPresenter(this)
         
-        val bottomSheet = BottomSheet()
-        
         val randomImage = backgrounds.random()
         applyPaletteGradient(randomImage)
         
@@ -52,6 +50,8 @@ class TimerActivity : AppCompatActivity(), TimerContract.View {
     }
     
         binding.buttonShowSheet.setOnClickListener {
+        val bottomSheet = BottomSheet()
+        
         bottomSheet.show(supportFragmentManager, "BottomSheet")
         }
 
