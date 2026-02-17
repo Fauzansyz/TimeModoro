@@ -1,76 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:background="?attr/colorPrimaryContainer"
-    android:fitsSystemWindows="true"
-    android:layout_height="match_parent">
-    
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="?attr/colorPrimaryContainer"
+     android:fitsSystemWindows="true">
+
     <ImageView
-        android:id="@+id/bgImage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bg_default" />
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:scaleType="centerCrop"
+         android:src="@drawable/bg_default"
+         android:id="@+id/bgImage" />
 
-
-    <!-- Overlay gelap -->
     <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#80000000" />  
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:background="#80000000" />
 
-    <!-- Timer TextView di tengah layar -->
     <TextView
-        android:id="@+id/tvTimer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="25:00"
-        android:textSize="60sp"
-        android:textColor="?attr/colorPrimaryFixed"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         android:textSize="60sp"
+         android:textColor="?attr/colorPrimaryFixed"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         android:id="@+id/tvTimer"
+         android:text="25:00"
+         android:textStyle="bold" />
 
-    <!-- Tombol Start/Pause/Reset di bawah timer (masih center horizontal) -->
     <LinearLayout
-        android:id="@+id/buttonLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/tvTimer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp">
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:gravity="center"
+         android:orientation="horizontal"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:layout_marginTop="24dp"
+         app:layout_constraintTop_toBottomOf="@id/tvTimer"
+         android:id="@+id/buttonLayout">
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Start"
-            android:textColor="@color/button_color_select"
-            app:backgroundTint="?attr/colorPrimaryContainer"/>
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             app:backgroundTint="?attr/colorPrimaryContainer"
+             android:textColor="@color/button_color_select"
+             android:id="@+id/btnStart"
+             android:text="Start" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnPause"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pause"
-            android:layout_marginStart="8dp"
-            android:textColor="@color/button_color_select"
-            app:backgroundTint="?attr/colorPrimaryContainer"/>
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             app:backgroundTint="?attr/colorPrimaryContainer"
+             android:textColor="@color/button_color_select"
+             android:layout_marginStart="8dp"
+             android:id="@+id/btnPause"
+             android:text="Pause" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnReset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reset"
-            android:layout_marginStart="8dp"
-            android:textColor="@color/button_color_select"
-            app:backgroundTint="?attr/colorPrimaryContainer"/>
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             app:backgroundTint="?attr/colorPrimaryContainer"
+             android:textColor="@color/button_color_select"
+             android:layout_marginStart="8dp"
+             android:id="@+id/btnReset"
+             android:text="Reset" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:layout_marginTop="24dp"
+         app:layout_constraintTop_toBottomOf="@id/buttonLayout">
+
+        <androidx.cardview.widget.CardView
+             android:layout_height="50dp"
+             android:layout_width="50dp"
+             app:cardBackgroundColor="@color/button_color_select"
+             app:cardCornerRadius="50dp">
+
+            <ImageButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:src="@drawable/ic_round_menu" />
+
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
