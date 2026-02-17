@@ -1,0 +1,36 @@
+package com.zandeveloper.timemodoro.ui.timer
+
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import android.view.LayoutInflater
+import android.widget.Toast
+import com.zandeveloper.timemodoro.R
+import android.view.ViewGroup
+import android.os.Bundle
+import android.view.View
+import com.zandeveloper.timemodoro.databinding.BottomSheetLayoutBinding
+
+class BottomSheet : BottomSheetDialogFragment() {
+
+private var _binding: BottomSheetLayoutBinding? = null
+private val binding get() = _binding!!
+    
+
+    override fun getTheme(): Int = R.style.ThemeOverlay_Material3_BottomSheetDialog
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+       _binding = BottomSheetLayoutBinding.inflate(inflater, container, false)
+       return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnStart.setOnClickListener {
+            Toast.makeText(context, "Timer Started!", Toast.LENGTH_SHORT).show()
+            dismiss()
+        }
+    }
+}

@@ -52,4 +52,15 @@
     <item name="android:windowLightStatusBar">false</item>
     <item name="android:windowLightNavigationBar">false</item>
     </style>
+    
+    <!-- Shape untuk Bottom Sheet -->
+<style name="ShapeAppearance.MyApp.BottomSheet" parent="ShapeAppearance.Material3.MediumComponent">
+    <item name="cornerSize">24dp</item>
+</style>
+
+<style name="Theme.MyApp.BottomSheet" parent="Theme.Material3.Light.BottomSheetDialog">
+    <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.BottomSheet</item>
+    <item name="android:backgroundTint">?attr/colorSurface</item>
+</style>
+
 </resources>

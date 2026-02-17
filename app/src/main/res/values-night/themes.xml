@@ -50,4 +50,9 @@
        <item name="android:navigationBarColor">@color/md_theme_surface</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
+    
+    <style name="Theme.MyApp.BottomSheet" parent="Theme.Material3.Dark.BottomSheetDialog">
+    <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.BottomSheet</item>
+    <item name="android:backgroundTint">?attr/colorSurface</item>
+</style>
 </resources>

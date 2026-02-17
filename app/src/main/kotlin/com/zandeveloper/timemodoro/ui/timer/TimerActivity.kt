@@ -13,6 +13,7 @@ import android.graphics.Color
 import androidx.core.graphics.ColorUtils
 import android.view.View
 import androidx.palette.graphics.Palette
+import com.zandeveloper.timemodoro.ui.timer.BottomSheet
 
 class TimerActivity : AppCompatActivity(), TimerContract.View {
 
@@ -36,6 +37,9 @@ class TimerActivity : AppCompatActivity(), TimerContract.View {
         setContentView(binding.root)
 
         presenter = TimerPresenter(this)
+        
+        val bottomSheet = BottomSheet()
+        bottomSheet.show(supportFragmentManager, "BottomSheet")
         
         val randomImage = backgrounds.random()
         applyPaletteGradient(randomImage)
