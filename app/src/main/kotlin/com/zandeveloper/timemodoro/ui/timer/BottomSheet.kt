@@ -15,7 +15,7 @@ private var _binding: BottomSheetLayoutBinding? = null
 private val binding get() = _binding!!
     
 
-    override fun getTheme(): Int = R.style.ThemeOverlay_Material3_BottomSheetDialog
+    override fun getTheme(): Int = R.style.Theme_MyApp_BottomSheet
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
