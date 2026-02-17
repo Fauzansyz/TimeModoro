@@ -32,5 +32,10 @@ private val binding get() = _binding!!
             Toast.makeText(context, "Timer Started!", Toast.LENGTH_SHORT).show()
             dismiss()
         }
+        
+        binding.handle.setOnTouchListener { _, _ ->
+            // biar user bisa drag, tapi BottomSheetDialogFragment udah support drag default
+            false
+        }
     }
 }
