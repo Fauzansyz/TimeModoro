@@ -17,6 +17,8 @@
     <View
          android:layout_height="match_parent"
          android:layout_width="match_parent"
+         android:clickable="false"
+         android:focusable="false"
          android:background="#80000000" />
 
     <TextView
@@ -82,12 +84,12 @@
 
         <androidx.cardview.widget.CardView
              android:layout_height="50dp"
-             android:id="@+id/buttonShowSheet"
              android:layout_width="50dp"
              app:cardBackgroundColor="?attr/colorPrimaryContainer"
              app:cardCornerRadius="50dp">
 
             <ImageButton
+                 android:id="@+id/buttonShowSheet"
                  android:layout_height="match_parent"
                  android:layout_width="match_parent"
                  android:src="@drawable/ic_round_menu"
