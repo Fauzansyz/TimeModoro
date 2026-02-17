@@ -53,13 +53,16 @@
     <item name="android:windowLightNavigationBar">false</item>
     </style>
     
-    <!-- Shape untuk Bottom Sheet -->
-<style name="ShapeAppearance.MyApp.BottomSheet" parent="ShapeAppearance.Material3.MediumComponent">
-    <item name="cornerSize">24dp</item>
+<style name="ShapeAppearance.MyApp.BottomSheet.TopRounded" parent="ShapeAppearance.Material3.MediumComponent">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerTopLeft">24dp</item>
+    <item name="cornerTopRight">24dp</item>
+    <item name="cornerBottomLeft">0dp</item>
+    <item name="cornerBottomRight">0dp</item>
 </style>
 
-<style name="Theme.MyApp.BottomSheet" parent="Theme.Material3.Light.BottomSheetDialog">
-    <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.BottomSheet</item>
+<style name="Theme.MyApp.BottomSheet.TopRounded" parent="Theme.Material3.Light.BottomSheetDialog">
+    <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.BottomSheet.TopRounded</item>
     <item name="android:backgroundTint">?attr/colorSurface</item>
 </style>
 

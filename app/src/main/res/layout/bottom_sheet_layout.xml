@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    app:cardCornerRadius="24dp"
+    android:layout_margin="0dp"
     app:cardElevation="8dp"
-    android:backgroundTint="?attr/colorSurface">
+    app:cardBackgroundColor="?attr/colorSurface"
+    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.BottomSheet.TopRounded">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,6 +14,21 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- HANDLE kecil di atas -->
+        <View
+            android:id="@+id/handle"
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:background="?attr/colorOutline"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="?attr/colorOutline"
+            android:alpha="0.5"
+            android:clipToOutline="true"
+            android:shape="rectangle"
+            android:radius="2dp"/>
+
+        <!-- Title -->
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
@@ -21,11 +36,27 @@
             android:text="Timer Settings"
             android:textAppearance="?attr/textAppearanceTitleMedium"/>
 
+        <!-- Tombol -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Start"
             android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:layout_marginTop="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginTop="8dp"/>
     </LinearLayout>
+
 </com.google.android.material.card.MaterialCardView>

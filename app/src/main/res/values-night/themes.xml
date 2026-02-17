@@ -52,7 +52,7 @@
     </style>
     
     <style name="Theme.MyApp.BottomSheet" parent="Theme.Material3.Dark.BottomSheetDialog">
-    <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.BottomSheet</item>
+    <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.MyApp.BottomSheet.TopRounded</item>
     <item name="android:backgroundTint">?attr/colorSurface</item>
 </style>
 </resources>
