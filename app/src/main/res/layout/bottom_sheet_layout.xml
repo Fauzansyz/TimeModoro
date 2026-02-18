@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Set rest time"
-            app:backgroundTint="?attr/colorPrimaryContainer"
+            app:backgroundTint="?attr/colorOnPrimaryContainer"
             android:layout_marginTop="16dp"/>
 
         <com.google.android.material.button.MaterialButton
@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Set work time"
-            app:backgroundTint="?attr/colorPrimaryContainer"
+            app:backgroundTint="?attr/colorOnPrimaryContainer"
             android:layout_marginTop="8dp"/>
     </LinearLayout>
 
