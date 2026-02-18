@@ -5,7 +5,6 @@
     android:layout_height="wrap_content"
     android:layout_margin="0dp"
     app:cardElevation="8dp"
-    app:cardBackgroundColor="?attr/colorSurface"
     app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.BottomSheet.TopRounded">
 
     <LinearLayout
