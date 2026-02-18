@@ -33,29 +33,25 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="?attr/colorPrimaryFixed"
             android:text="@string/setting_bottom_sheet"
             android:textAppearance="?attr/textAppearanceTitleMedium"/>
 
         <!-- Tombol -->
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnStart"
+            android:id="@+id/restTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Start"
+            android:text="Set rest time"
+            app:backgroundTint="?attr/colorPrimaryContainer"
             android:layout_marginTop="16dp"/>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnPause"
+            android:id="@+id/workTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pause"
-            android:layout_marginTop="8dp"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnReset"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Reset"
+            android:text="Set work time"
+            app:backgroundTint="?attr/colorPrimaryContainer"
             android:layout_marginTop="8dp"/>
     </LinearLayout>
 
