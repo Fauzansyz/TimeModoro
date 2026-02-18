@@ -33,7 +33,7 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Timer Settings"
+            android:text="@string/setting_bottom_sheet"
             android:textAppearance="?attr/textAppearanceTitleMedium"/>
 
         <!-- Tombol -->
