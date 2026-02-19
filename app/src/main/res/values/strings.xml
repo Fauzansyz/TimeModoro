@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="setting_bottom_sheet">Setting</string>
+<string name="app_name">TimeModoro</string>
+</resources>
