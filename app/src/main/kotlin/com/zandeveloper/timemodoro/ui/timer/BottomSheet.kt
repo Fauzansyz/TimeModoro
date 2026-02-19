@@ -45,12 +45,8 @@ private val binding get() = _binding!!
         }
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        binding.restTime.setOnClickListener {
-            Toast.makeText(context, "Timer Started!", Toast.LENGTH_SHORT).show()
-            dismiss()
-        }
-    }
+    //override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        //super.onViewCreated(view, savedInstanceState)
+        
+    //}
 }
