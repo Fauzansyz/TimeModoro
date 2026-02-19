@@ -1,58 +1,35 @@
-<com.google.android.material.card.MaterialCardView
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="0dp"
-    app:cardElevation="8dp"
-    android:background="@android:color/transparent"
-    app:shapeAppearanceOverlay="@style/ShapeAppearance.MyApp.BottomSheet.TopRounded">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <LinearLayout
+    <!-- Handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bottom_sheet_handle"
+        android:layout_marginBottom="12dp"/>
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="wrap_content">
 
-        <!-- HANDLE kecil di atas -->
-        <View
-            android:id="@+id/handle"
-            android:layout_width="40dp"
-            android:layout_height="4dp"
-            android:layout_gravity="center"
-            android:background="?attr/colorOutline"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="?attr/colorOutline"
-            android:alpha="0.5"
-            android:clipToOutline="true"
-            android:shape="rectangle"
-            android:radius="2dp"/>
-
-        <!-- Title -->
-        <TextView
-            android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="?attr/colorPrimaryFixed"
-            android:text="@string/setting_bottom_sheet"
-            android:textAppearance="?attr/textAppearanceTitleMedium"/>
-
-        <!-- Tombol -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/restTime"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Set rest time"
-            app:backgroundTint="?attr/colorOnPrimaryContainer"
-            android:layout_marginTop="16dp"/>
+            android:orientation="vertical">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/workTime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Set work time"
-            app:backgroundTint="?attr/colorOnPrimaryContainer"
-            android:layout_marginTop="8dp"/>
-    </LinearLayout>
+            <TextView android:text="Option 1"/>
+            <TextView android:text="Option 2"/>
+            <TextView android:text="Option 3"/>
+            <TextView android:text="Option 4"/>
+            <TextView android:text="Option 5"/>
 
-</com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
