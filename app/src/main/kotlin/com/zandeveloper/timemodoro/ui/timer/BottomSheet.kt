@@ -24,6 +24,24 @@ private val binding get() = _binding!!
        _binding = BottomSheetLayoutBinding.inflate(inflater, container, false)
        return binding.root
     }
+    
+    override fun onStart() {
+        super.onStart()
+
+        val dialog = dialog as BottomSheetDialog
+        val bottomSheet =
+            dialog.findViewById<View>(com.google.android.material.R.id.design_bottom_sheet)
+
+        bottomSheet?.let {
+            val behavior = BottomSheetBehavior.from(it)
+
+            behavior.state = BottomSheetBehavior.STATE_COLLAPSED
+            behavior.peekHeight = 400 // tinggi awal
+            behavior.isDraggable = true
+            behavior.isHideable = true
+            behavior.skipCollapsed = false
+        }
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
