@@ -43,6 +43,10 @@ private val binding get() = _binding!!
             behavior.isHideable = true
             behavior.skipCollapsed = false
         }
+        
+        bottomSheet?.setBackgroundColor(
+          requireContext().getColor(R.color.md_theme_primary)
+        )
     }
 
     //override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
