@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.os.Bundle
 import android.view.View
 import com.zandeveloper.timemodoro.databinding.BottomSheetLayoutBinding
+import android.app.Dialog
 
 class BottomSheet : BottomSheetDialogFragment() {
 
@@ -46,9 +47,6 @@ private val binding get() = _binding!!
             behavior.skipCollapsed = false
         }
         
-        bottomSheet?.setBackgroundColor(
-          requireContext().getColor(R.color.md_theme_primary)
-        )
     }
 
     //override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
