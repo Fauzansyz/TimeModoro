@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:theme="@style/Theme.Material3.Light.BottomSheetDialog"
     android:background="@drawable/bottom_sheet_bg"
     android:padding="16dp">
 
