@@ -1,0 +1,19 @@
+<resources>
+<style name="CustomBottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+    <!-- Background warna custom -->
+    <item name="bottomSheetStyle">@style/CustomShapeBottomSheet</item>
+</style>
+
+<style name="CustomShapeBottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+    <item name="android:background">@color/md_theme_primary</item>
+    <item name="shapeAppearanceOverlay">@style/CustomCorners</item>
+</style>
+
+<style name="CustomCorners">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeTopLeft">16dp</item>
+    <item name="cornerSizeTopRight">16dp</item>
+    <item name="cornerSizeBottomLeft">0dp</item>
+    <item name="cornerSizeBottomRight">0dp</item>
+</style>
+</resources>

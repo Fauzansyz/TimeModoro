@@ -17,7 +17,9 @@ private var _binding: BottomSheetLayoutBinding? = null
 private val binding get() = _binding!!
     
 
-    override fun getTheme(): Int = R.style.Theme_MyApp_BottomSheet
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        return BottomSheetDialog(requireContext(), R.style.CustomBottomSheet)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
